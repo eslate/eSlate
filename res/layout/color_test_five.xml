@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <ImageButton 
+          android:id="@+id/apple"
+          android:layout_width="200dp"
+          android:layout_height="200dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="30dp"
+          android:src="@drawable/apple"
+          android:background="@android:color/transparent"
+          />
+        
+        
+        <ImageButton android:id="@+id/rabit"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/rabit"
+            android:background="@android:color/transparent"
+            />
+        
+        <ImageButton 
+            android:id="@+id/blueCar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bluecar"/>
+   		 </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+        
+        <ImageButton 
+            android:id="@+id/blackCrow"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/blackcrow"
+            android:background="@android:color/transparent"
+            />
+        
+        <ImageButton 
+            android:id="@+id/yellow"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/yellow"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/animal_lionback"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <ImageView
+        android:id="@+id/lion"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="1dp"
+        android:src="@drawable/animal_lion4"/>
+    
+     <ImageView 
+        android:id="@+id/textlion"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left|top"
+     	android:layout_marginLeft="-250dp"
+        android:layout_marginTop="30dp"
+       	android:background="@drawable/liontext"   
+        /> 
+    
+
+</LinearLayout>

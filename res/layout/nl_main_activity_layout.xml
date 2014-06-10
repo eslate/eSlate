@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nl_main_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginRight="-50dp"
+        android:background="@drawable/go"/>
+
+    <Button
+        android:id="@+id/skip"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/skip" />
+
+</LinearLayout>

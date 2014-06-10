@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/blackboard">
+    
+    
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_weight="0.00"
+       	android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+         android:layout_marginTop="25dp"
+        android:src="@drawable/ablr_home"/>
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_weight="0.00"
+       	android:layout_gravity="center|left"
+        android:layout_marginLeft="60dp"
+         android:layout_marginTop="-150dp"
+        android:src="@drawable/car"/>
+     
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_weight="0.00"
+       	android:layout_gravity="center|right"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginRight="50dp"
+         android:layout_marginTop="-165dp"
+        android:src="@drawable/dog"/>
+    
+ 
+</LinearLayout>

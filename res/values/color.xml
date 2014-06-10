@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="background1">#FFE4B5</color>
+<color name="textcolor1">#FF1493</color> 
+
+<color name="letter">#FFFFCC</color> 
+<color name="letter1">#C5908E</color> 
+<color name="dialog1">#FFA500</color> 
+</resources>

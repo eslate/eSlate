@@ -1,0 +1,22 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/bi_back" >
+
+    <ImageView
+        android:id="@+id/pigeon"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+       	android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/bi_pigeon"/>
+
+    <ImageView
+        android:id="@+id/pigeontext"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="-30dp"
+        android:src="@drawable/pigeontext" />
+
+</LinearLayout>

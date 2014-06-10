@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="eslate.main"
+	android:installLocation="preferExternal"
+	android:versionCode="1"
+	android:versionName="1.0" >
+
+	<uses-sdk
+		android:minSdkVersion="14"
+		android:targetSdkVersion="19" />
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	
+		<application
+		android:allowBackup="true"
+		android:theme="@style/AppBaseTheme"
+		android:icon="@drawable/logo"
+		android:label="@string/app_name">
+		
+		<!-- android:theme="@style/AppTheme" > -->
+		
+		<activity
+			android:name="eslate.main.StartupActivity"
+			android:label="@string/app_name">
+		<intent-filter>
+		<action android:name="android.intent.action.MAIN" />
+		<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+		</activity>
+		
+		<activity
+			android:name="eslate.main.WelcomeActivity"
+			android:label="@string/app_name"
+			android:noHistory="true">			
+		</activity>
+		
+		<activity
+			android:name="eslate.main.Main_Menu_Activity"
+			android:label="@string/app_name"
+			android:noHistory="true">
+		</activity>
+		
+<!--  Mulakshare Chart-->		
+		<activity
+            android:name="eslate.mulakshare.Mulakshare_Main_Activity"
+            android:label="@string/app_name" >
+        </activity>
+       
+        <activity
+            android:name="eslate.mulakshare.Mulakshare_LetterPractice_Activity"
+            android:label="@string/title_activity_letter_practice"
+            android:parentActivityName="eslate.mulakshare.Mulakshare_Main_Activity" >
+        </activity>
+
+     		
+<!--Number Learning Application  -->
+	    
+	    <activity
+            android:name="eslate.numberlearning.NL_Main_Activity"
+            android:label="@string/app_name" >
+        </activity>
+	    
+	    <activity
+            android:name="eslate.numberlearning.OneActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity android:name="eslate.numberlearning.TwoActivity"
+                  android:label="@string/app_name">
+        </activity>
+        
+        <activity android:name="eslate.numberlearning.ThreeActivity"
+                  android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="eslate.numberlearning.FourActivity"
+		    android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="eslate.numberlearning.FiveActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="eslate.numberlearning.SixActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="eslate.numberlearning.SevenActivity"
+			android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="eslate.numberlearning.EightActivity"
+			android:label="@string/app_name">
+        </activity>
+        
+        <activity 
+            android:name="eslate.numberlearning.NineActivity"
+            android:label="@string/app_name">   
+        </activity>
+        	
+  <!--Number Writing Application  -->   
+		<activity
+            android:name="eslate.writenumber.Number_Main_Activity"
+            android:label="@string/app_name" >
+        </activity>
+       
+        <activity
+            android:name="eslate.writenumber.Number_PracticeActivity"
+            android:label="@string/title_activity_letter_practice"
+            android:parentActivityName="eslate.writenumber.Number_Main_Activity" >
+        </activity>
+        	
+<!--Mulakshare Menu  -->
+
+		<activity
+          android:name="eslate.learnaplha.MarathiAlpha_Main_Activity"
+          android:label="@string/app_name" 
+          android:noHistory="true">       
+		</activity>
+	
+		<activity 
+		android:name="eslate.learnaplha.Marathi_Swar_Activity"
+		android:label="@string/app_name"
+		android:noHistory="true">
+		</activity>
+		
+		<activity 
+		android:name="eslate.learnaplha.Marathi_Vyanjan_Activity"
+		android:label="@string/app_name"
+		android:noHistory="true">
+		</activity>
+		
+		<activity 
+		android:name="eslate.drawletter.LetterVideo"
+		android:label="@string/app_name"
+		android:noHistory="true">
+		</activity>
+	
+		<activity 
+		android:name="eslate.drawletter.LetterFirstActivity"
+		android:label="@string/app_name"
+		android:noHistory="true">
+		</activity>
+
+		<activity 
+	    android:name="eslate.drawletter.LetterSecondActivity"
+        android:label="@string/app_name"
+        android:noHistory="true">
+		</activity>
+
+		<activity 
+	    android:name="eslate.compareimage.ImageCompareActivity"
+        android:label="@string/app_name"
+        android:noHistory="true">
+        </activity>
+
+			<activity
+            android:name="eslate.preparation.main.Eslate_preparatrion_MainActivity"
+            android:label="@string/app_name" >
+        	</activity>
+ <!-- Exam  -->
+         	<activity android:name="eslate.preparation.main.Exam_Activity"
+        	    android:label="@string/app_name">
+        	</activity>
+        		        	
+<!-- Report Login -->
+
+        	<activity android:name="eslate.report.LoginReportActivity"
+        	    	  android:label="@string/app_name">
+        	</activity>
+        	<activity android:name="eslate.report.PreparationReport"
+        	    android:label="@string/app_name">
+        	</activity>
+        	
+<!--Paint Application  -->
+         	<activity android:name="eslate.slate.DrawingActivity"
+            android:label="@string/app_name">
+         	</activity>
+<!-- Prepare  -->     
+
+<!-- Pattern Matching -->
+
+          	<activity
+            android:name="eslate.patternmatching.PM_Main_Activity"
+            android:label="@string/app_name" >
+        	</activity>
+
+          	<activity
+            android:name="eslate.patternmatching.PM_Activity1"
+            android:label="@string/app_name" >
+        	</activity>
+        
+         	<activity
+            android:name="eslate.patternmatching.PM_Activity2"
+            android:label="@string/app_name" >
+			</activity>
+        
+        	<activity
+            android:name="eslate.patternmatching.PM_Activity3"
+            android:label="@string/app_name" >
+	    	</activity>
+            
+            <activity
+            android:name="eslate.patternmatching.PM_Activity4"
+            android:label="@string/app_name" >
+            </activity>
+            
+            <activity
+            android:name="eslate.patternmatching.PM_Activity5"
+            android:label="@string/app_name" >
+            </activity>
+            
+<!-- Pattern Differing -->
+            
+            
+           	<activity
+            android:name="eslate.patterndiffering.Pattern_Diff_Main_Activity"
+            android:label="@string/app_name" >
+        	</activity>
+            
+           	<activity
+            android:name="eslate.patterndiffering.Pattern_Diff_Activity1"
+            android:label="@string/app_name" >
+        	</activity>
+        	
+        	<activity
+            android:name="eslate.patterndiffering.Pattern_Diff_Activity2"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="eslate.patterndiffering.Pattern_Diff_Activity3"
+            android:label="@string/app_name" >
+            </activity>
+            
+ <!-- Above-Below and Left-Right Concept -->
+ 			<activity android:name="eslate.ablrconcept.ABLR_Main_Activity"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			<activity android:name="eslate.ablrconcept.ABactivity1"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			<activity android:name="eslate.ablrconcept.Front_Back"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			<activity android:name="eslate.ablrconcept.LRactivity1"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			<activity android:name="eslate.ablrconcept.LRactivity2"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			
+<!--Above Below and LEft Right Practice Test   -->
+	
+ 			<activity
+            android:name="eslate.ablrconcepttest.ABLRtest1_Activity"
+            android:label="@string/app_name" >
+        	</activity>
+        
+        	<activity
+            android:name="eslate.ablrconcepttest.ABLRtest2_Activity"
+            android:label="@string/app_name" >
+            </activity>
+            
+            <activity
+            android:name="eslate.ablrconcepttest.ABLRtest3_Activity"
+            android:label="@string/app_name" >
+            </activity>
+            
+             <activity
+            android:name="eslate.ablrconcepttest.ABLRtest4_Activity"
+            android:label="@string/app_name" >
+            </activity>
+ 			
+ <!-- ABLR Concept DB test -->
+ 			
+ 			<activity android:name="eslate.ablrtestdata.ABTest1"
+ 			    android:label="@string/app_name"></activity>
+ 			
+ 			<activity android:name="eslate.ablrtestdata.ABTest2"
+ 			    android:label="@string/app_name"></activity>
+ 			
+ 			<activity android:name="eslate.ablrtestdata.ABTest3"
+ 			    android:label="@string/app_name"></activity>
+ 				
+ 			<activity android:name="eslate.ablrtestdata.LRTest1"
+ 			    android:label="@string/app_name"></activity>
+ 			
+ 			<activity android:name="eslate.ablrtestdata.LRTest2"
+ 			    android:label="@string/app_name"></activity>
+ 			
+ 			<activity android:name="eslate.ablrtestdata.LRTest3"
+ 			    android:label="@string/app_name"></activity>
+ 					
+ 			<activity android:name="eslate.ablrtestdata.ABLRScoreActivity"
+ 			    android:label="@string/app_name"></activity>
+ 					
+
+ 			
+ 			
+<!--Colour Introduction and Test  -->
+            
+          	<activity
+            android:name="eslate.colorintro.ColorIntro_BegineActivity"
+            android:label="@string/app_name" >
+            
+        	</activity>
+         	
+         	<activity
+            android:name="eslate.colorintro.BasicColor"
+            android:label="@string/app_name" >
+			</activity>
+			
+			<activity
+            android:name="eslate.colorintro.RedActivity"
+            android:label="@string/app_name" >
+			</activity>
+			
+			<activity
+            android:name="eslate.colorintro.YellowActivity"
+            android:label="@string/app_name" >
+			</activity>
+		
+			<activity
+            android:name="eslate.colorintro.BlueActivity"
+            android:label="@string/app_name" >
+			</activity>
+		
+			<activity
+            android:name="eslate.colorintro.BlackActivity"
+            android:label="@string/app_name" >
+			</activity>
+		
+			<activity
+            android:name="eslate.colorintro.WhiteActivity"
+            android:label="@string/app_name" >
+			</activity>
+		
+			<activity
+            android:name="eslate.colortest.ColorTestOneActivity"
+            android:label="@string/app_name" >
+         	
+        	</activity>
+        
+         	<activity 
+            android:name="eslate.colortest.ColorTestTwoActivity"
+            android:label="@string/app_name">            
+         	</activity>
+         
+         	<activity 
+            android:name="eslate.colortest.ColorTestThreeActivity"
+            android:label="@string/app_name">            
+         	</activity>
+         
+         	<activity 
+            android:name="eslate.colortest.ColorTestFourActivity"
+            android:label="@string/app_name">            
+         	</activity>
+                 
+         	<activity 
+            android:name="eslate.colortest.ColorTestFiveActivity"
+            android:label="@string/app_name">            
+         	</activity>
+         
+         	<activity 
+            android:name="eslate.colortest.ColorTestSixActivity"
+            android:label="@string/app_name">            
+         	</activity>
+         	
+         	<activity android:name="eslate.colorintro.RedPracticeSlate"
+         	    android:label="@string/app_name">
+           	</activity>
+           	
+         	<activity android:name="eslate.colorintro.YellowPracticeSlate"
+         	    android:label="@string/app_name"></activity>
+         	
+         	<activity android:name="eslate.colorintro.BluePracticeSlate"
+         	    android:label="@string/app_name"></activity>
+         	
+         	<activity android:name="eslate.colorintro.BlackPracticeSlate"
+         	    android:label="@string/app_name"></activity>
+         	
+         	<activity android:name="eslate.colorintro.WhitePracticeSlate"
+         	    android:label="@string/app_name"></activity>
+         	
+         	<!-- color blind -->
+         	<activity android:name="eslate.colorblind.CB_BlueActivity"
+         	    android:label="@string/app_name"></activity>
+         	
+         		<activity android:name="eslate.colorblind.CB_RedActivity"
+         	    android:label="@string/app_name"></activity>
+         		
+         			<activity android:name="eslate.colorblind.CB_YellowActivity"
+         	    android:label="@string/app_name"></activity>
+<!-- Color test second -->
+
+			<activity android:name="eslate.colortestdb.ColorTestSecondActivity_one"
+			    	android:label="@string/app_name"></activity>
+			
+			
+			<activity android:name="eslate.colortestdb.ColorTestSecondActivity_two"
+			    	android:label="@string/app_name"></activity>
+			
+			
+			<activity android:name="eslate.colortestdb.ColorTestSecondActivity_three"
+			    	android:label="@string/app_name"></activity>
+			
+			
+			<activity android:name="eslate.colortestdb.ColorTestSecondActivity_four"
+			    	android:label="@string/app_name"></activity>
+			
+			
+			<activity android:name="eslate.colortestdb.ColorTestSecondActivity_five"
+			    	android:label="@string/app_name"></activity>
+			
+			<activity android:name="eslate.colortestdb.ColorTestSecondScoreActivity"
+			    	android:label="@string/app_name"></activity>
+			
+<!-- Shpae Introduction -->
+			<activity android:name="eslate.shapeintro.ShapeIntroBegineActivity"
+			     android:label="@string/app_name"></activity>
+			<activity android:name="eslate.shapeintro.PointActivity"
+			     android:label="@string/app_name"></activity>		
+			     
+			 <activity android:name="eslate.shapeintro.LineActivity"
+			     android:label="@string/app_name"></activity>
+			 
+			  <activity android:name="eslate.shapeintro.MultiLineActivity"
+			     android:label="@string/app_name"></activity>
+
+				<activity android:name="eslate.shapeintro.Triangle_Activity"
+			     android:label="@string/app_name"></activity>	
+						    
+				<activity android:name="eslate.shapeintro.Rectangle_Activity"
+			     android:label="@string/app_name"></activity>     		  
+			
+				<activity android:name="eslate.shapeintro.Circle_Activity"
+			     android:label="@string/app_name"></activity>
+
+
+			     
+<!--Shape Test One  -->
+			
+ 			<activity
+            android:name="eslate.shapetest.ShapeTestOneActivity"
+            android:label="@string/app_name" >
+        	</activity>
+        
+           <activity 
+            android:name="eslate.shapetest.ShapeTestTwoActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+           </activity>
+           
+           <activity 
+            android:name="eslate.shapetest.ShapeTestThreeActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+           </activity>
+           
+           <activity 
+            android:name="eslate.shapetest.ShapeTestFourActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+           </activity>
+           
+           <activity 
+            android:name="eslate.shapetest.ShapeTestFiveActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+           </activity>
+           
+          <activity 
+            android:name="eslate.shapetest.ShapeTestSixActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+           </activity>
+           
+           <activity 
+            android:name="eslate.shapetest.ShapeTestSevenActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+           </activity>
+           
+           <activity 
+            android:name="eslate.shapetest.ShapeTestEightActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+            </activity>
+            
+ <!-- Shape Test Second -->
+ 
+ 			<activity android:name="eslate.shapetestsecond.ShapeTestSecondOneActivity"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			
+ 			<activity android:name="eslate.shapetestsecond.ShapeTestSecondTwoActivity"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			
+ 			<activity android:name="eslate.shapetestsecond.ShapeTestSecondThreeActivity"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			
+ 			<activity android:name="eslate.shapetestsecond.ShapeTestSecondFourActivity"
+ 			    android:label="@string/app_name">
+ 			</activity>
+ 			
+ 			<activity android:name="eslate.shapetestsecond.ShapeScoreActivity"
+ 			    android:label="@string/app_name"></activity>
+            
+<!--Bird Introduction  -->
+           
+            <activity
+            android:name="eslate.birdintro.Bi_Sparrow"
+            android:label="@string/app_name" >
+            
+        	</activity>
+        	
+        	<activity
+            android:name="eslate.birdintro.Bi_Crow_Activity"
+            android:label="@string/app_name" >
+            </activity>
+            
+            <activity
+            android:name="eslate.birdintro.Bi_Duck_Activity"
+            android:label="@string/app_name" >
+            </activity>
+            
+            <activity
+            android:name="eslate.birdintro.Bi_Pigeon_Activity"
+            android:label="@string/app_name" >
+            </activity>
+                        
+            <activity
+            android:name="eslate.birdintro.Bi_Peacock_Activity"
+            android:label="@string/app_name" >
+            </activity>
+
+            <activity
+            android:name="eslate.birdintro.Bi_Hen_Activity"
+            android:label="@string/app_name" >
+            </activity> 
+            
+            <activity
+            android:name="eslate.birdintro.Bi_Chil_Activity"
+            android:label="@string/app_name" >
+            </activity>
+            
+            <activity
+            android:name="eslate.birdintro.Bi_Parrot_Activity"
+            android:label="@string/app_name" >
+            </activity> 
+
+<!--Animal Introduction  -->
+         
+           	<activity
+            android:name="eslate.animalintro.Animal_intro_Cat_Activity"
+            android:label="@string/app_name" 
+            >
+            
+        	</activity>
+        
+        	<activity  android:name="eslate.animalintro.Animal_intro_Dog_Activity"
+            android:label="@string/app_name" >
+        	</activity>
+        
+         	<activity  android:name="eslate.animalintro.Animal_intro_Lion_Activity"
+            android:label="@string/app_name" >
+        	</activity>
+        
+        	<activity  android:name="eslate.animalintro.Animal_intro_Tigre_Activity"
+            android:label="@string/app_name" >    
+        	</activity>
+        
+         	<activity  android:name="eslate.animalintro.Animal_intro_Horse_Activity"
+            android:label="@string/app_name" >
+        	</activity>
+        
+        	<activity  android:name="eslate.animalintro.Animal_intro_Cow_Activity"
+            android:label="@string/app_name" >
+        	</activity>
+        
+        	<activity android:name="eslate.animalintro.Animal_intro_Elephant_Activity"
+            android:label="@string/app_name">
+        	</activity>
+
+<!-- video tracking  -->
+        	
+        	<activity  android:name="eslate.videotrack.database.video"
+        	            android:label="@string/app_name">
+        	</activity>
+  
+        	<activity  android:name="eslate.videotrack.database.videoDatabaseHandler"
+        	            android:label="@string/app_name">
+        	</activity>
+  
+  <!--Body Parts Introduction  -->
+        <activity
+            android:name="eslate.bodyparts.Bodyparts_MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="eslate.bodyparts.Bodyparts_Upper_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="eslate.bodyparts.Bodyparts_Middle_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="eslate.bodyparts.Bodyparts_Lower_Activity"
+            android:label="@string/app_name" >
+        </activity>          	
+	</application>
+
+</manifest>

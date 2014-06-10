@@ -1,0 +1,23 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/bi_sea" >
+
+     <ImageView
+         android:id="@+id/ducktext"
+         android:layout_width="150dp"
+         android:layout_height="100dp"
+         android:layout_gravity="left"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="30dp"
+         android:src="@drawable/ducktext" />
+
+    <ImageView
+        android:id="@+id/duck"
+        android:layout_width="500dp"
+        android:layout_height="350dp"
+       	android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="-50dp"
+        android:src="@drawable/bi_duck"/>
+
+</LinearLayout>
